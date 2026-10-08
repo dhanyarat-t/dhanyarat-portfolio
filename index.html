@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dhanyarat | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio ส่วนตัวของ Dhanyarat — โปรเจกต์ งาน และช่องทางติดต่อในหน้าเดียว"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Segoe UI", "Tahoma", "sans-serif"],
+            },
+            colors: {
+              ink: "#0f172a",
+              accent: "#2563eb",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-slate-50 text-ink antialiased">
+    <header class="sticky top-0 z-10 border-b border-slate-200 bg-white/90 backdrop-blur">
+      <nav class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
+        <a href="#top" class="text-lg font-semibold tracking-tight">Dhanyarat</a>
+        <div class="hidden gap-6 text-sm font-medium text-slate-600 sm:flex">
+          <a class="hover:text-accent" href="#about">เกี่ยวกับ</a>
+          <a class="hover:text-accent" href="#projects">ผลงาน</a>
+          <a class="hover:text-accent" href="#contact">ติดต่อ</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top" class="mx-auto max-w-5xl px-6">
+      <section class="flex min-h-[70vh] flex-col justify-center py-16">
+        <p class="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-accent">
+          Personal Portfolio
+        </p>
+        <h1 class="max-w-3xl text-4xl font-bold leading-tight sm:text-6xl">
+          สวัสดี ฉันคือ Dhanyarat
+        </h1>
+        <p class="mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
+          นักเรียนที่กำลังสร้างผลงานบนเว็บ หน้านี้รวมโปรเจกต์และช่องทางติดต่อไว้ในหน้าเดียว
+          เพื่อให้ดูง่ายและอัปเดตต่อได้
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a
+            href="#projects"
+            class="rounded-full bg-ink px-5 py-2.5 text-sm font-medium text-white hover:bg-slate-800"
+          >
+            ดูผลงาน
+          </a>
+          <a
+            href="#contact"
+            class="rounded-full border border-slate-300 px-5 py-2.5 text-sm font-medium hover:border-slate-400"
+          >
+            ติดต่อฉัน
+          </a>
+        </div>
+      </section>
+
+      <section id="about" class="scroll-mt-24 border-t border-slate-200 py-16">
+        <h2 class="text-2xl font-semibold">เกี่ยวกับฉัน</h2>
+        <p class="mt-4 max-w-3xl leading-relaxed text-slate-600">
+          ตอนนี้โฟกัสที่การสร้างเว็บไซต์ที่อ่านง่าย ใช้งานได้จริง และพัฒนาต่อได้
+          ชุดนี้เป็น boilerplate เริ่มต้นด้วย HTML และ Tailwind CSS เพื่อให้เติมเนื้อหาจริงได้ทันที
+        </p>
+        <ul class="mt-6 grid gap-3 sm:grid-cols-3">
+          <li class="rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-200">HTML</li>
+          <li class="rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-200">Tailwind CSS</li>
+          <li class="rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-200">GitHub</li>
+        </ul>
+      </section>
+
+      <section id="projects" class="scroll-mt-24 border-t border-slate-200 py-16">
+        <h2 class="text-2xl font-semibold">ผลงาน</h2>
+        <div class="mt-8 grid gap-6 md:grid-cols-2">
+          <article class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
+            <h3 class="text-lg font-semibold">Portfolio หน้าเดียว</h3>
+            <p class="mt-2 text-slate-600">
+              เว็บไซต์แนะนำตัวแบบ single page ที่โหลดเร็ว และปรับแต่งด้วย utility classes ของ Tailwind
+            </p>
+          </article>
+          <article class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
+            <h3 class="text-lg font-semibold">โปรเจกต์ถัดไป</h3>
+            <p class="mt-2 text-slate-600">
+              ใส่ชื่อโปรเจกต์ คำอธิบายสั้น ๆ และลิงก์ GitHub หรือเดโมตรงนี้
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="scroll-mt-24 border-t border-slate-200 py-16">
+        <h2 class="text-2xl font-semibold">ติดต่อ</h2>
+        <p class="mt-4 text-slate-600">พร้อมคุยเรื่องโปรเจกต์ งานเรียน หรือโอกาสใหม่ ๆ</p>
+        <div class="mt-6 flex flex-wrap gap-4 text-sm font-medium">
+          <a class="text-accent hover:underline" href="mailto:hello@example.com">hello@example.com</a>
+          <a class="text-accent hover:underline" href="https://github.com/" target="_blank" rel="noreferrer">
+            GitHub
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-200 py-8 text-center text-sm text-slate-500">
+      © 2026 Dhanyarat
+    </footer>
+  </body>
+</html>
